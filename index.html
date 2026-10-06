@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Love 🎂🐧</title>
+  <meta name="description" content="A special birthday surprise for the most amazing person in the world!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ===================== SLIDE 1: LANDING ===================== -->
+    <section id="slide-1" class="slide active">
+      <div class="slide-content slide-center">
+        <h1 class="slide-heading" id="heading-accept">PLS ACCEPT THE GIFT</h1>
+
+        <!-- Shy Penguin SVG -->
+        <svg class="penguin penguin-shy" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" aria-label="Cute shy penguin">
+          <!-- Body -->
+          <ellipse cx="100" cy="145" rx="68" ry="78" fill="#b5a48c"/>
+          <!-- Belly -->
+          <ellipse cx="100" cy="155" rx="48" ry="58" fill="#f5f0e6"/>
+          <!-- Head -->
+          <ellipse cx="100" cy="82" rx="52" ry="48" fill="#b5a48c"/>
+          <!-- Face -->
+          <ellipse cx="100" cy="90" rx="38" ry="32" fill="#f5f0e6"/>
+          <!-- Eyes - happy closed ^^ -->
+          <path d="M 80 84 Q 85 76, 90 84" stroke="#4a4a4a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M 110 84 Q 115 76, 120 84" stroke="#4a4a4a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Beak -->
+          <path d="M 95 94 L 100 102 L 105 94 Z" fill="#f4a940"/>
+          <!-- Blush -->
+          <circle cx="74" cy="94" r="7" fill="#ffb5b5" opacity="0.5"/>
+          <circle cx="126" cy="94" r="7" fill="#ffb5b5" opacity="0.5"/>
+          <!-- Left flipper (curved inward) -->
+          <path d="M 38 125 Q 25 155, 70 175" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5" stroke-linejoin="round"/>
+          <!-- Right flipper (curved inward) -->
+          <path d="M 162 125 Q 175 155, 130 175" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5" stroke-linejoin="round"/>
+          <!-- Feet -->
+          <ellipse cx="75" cy="222" rx="18" ry="7" fill="#f4a940" transform="rotate(-8 75 222)"/>
+          <ellipse cx="125" cy="222" rx="18" ry="7" fill="#f4a940" transform="rotate(8 125 222)"/>
+        </svg>
+
+        <div class="btn-group">
+          <button id="btn-yes" class="btn btn-orange">YES</button>
+          <button id="btn-no" class="btn btn-orange">NO</button>
+        </div>
+      </div>
+
+      <!-- Floating hearts background -->
+      <div class="floating-hearts" aria-hidden="true">
+        <span class="heart">💕</span>
+        <span class="heart">💖</span>
+        <span class="heart">💗</span>
+        <span class="heart">🩷</span>
+        <span class="heart">💕</span>
+        <span class="heart">💖</span>
+        <span class="heart">💗</span>
+        <span class="heart">🩷</span>
+      </div>
+    </section>
+
+    <!-- ===================== SLIDE 2: NO RESPONSE ===================== -->
+    <section id="slide-2" class="slide">
+      <div class="slide-content slide-center">
+        <h1 class="slide-heading" id="heading-no">WHY DID YOU CLICK NO!</h1>
+
+        <!-- Rolling/upset penguin SVG -->
+        <svg class="penguin penguin-rolling" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" aria-label="Upset rolling penguin">
+          <g transform="rotate(-25 110 130)">
+            <!-- Body -->
+            <ellipse cx="110" cy="135" rx="62" ry="72" fill="#b5a48c"/>
+            <!-- Belly -->
+            <ellipse cx="110" cy="145" rx="44" ry="54" fill="#f5f0e6"/>
+            <!-- Head -->
+            <ellipse cx="110" cy="76" rx="48" ry="44" fill="#b5a48c"/>
+            <!-- Face -->
+            <ellipse cx="110" cy="84" rx="35" ry="28" fill="#f5f0e6"/>
+            <!-- Left eye - open, annoyed -->
+            <circle cx="94" cy="78" r="5" fill="#4a4a4a"/>
+            <circle cx="93" cy="77" r="1.5" fill="#fff"/>
+            <!-- Right eye - squinting -->
+            <path d="M 118 80 Q 123 73, 128 80" stroke="#4a4a4a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- Beak - open -->
+            <path d="M 104 92 L 110 99 L 116 92 Z" fill="#f4a940"/>
+            <path d="M 106 98 L 110 103 L 114 98" fill="#e89830" stroke="#d08020" stroke-width="0.5"/>
+            <!-- Blush -->
+            <circle cx="82" cy="90" r="6" fill="#ffb5b5" opacity="0.5"/>
+            <circle cx="138" cy="90" r="6" fill="#ffb5b5" opacity="0.5"/>
+            <!-- Left flipper (up) -->
+            <path d="M 52 108 Q 30 90, 40 120 Q 45 140, 65 150" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+            <!-- Right flipper -->
+            <path d="M 168 115 Q 185 130, 160 165" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+            <!-- Feet -->
+            <ellipse cx="85" cy="205" rx="16" ry="6" fill="#f4a940" transform="rotate(-15 85 205)"/>
+            <ellipse cx="135" cy="200" rx="16" ry="6" fill="#f4a940" transform="rotate(15 135 200)"/>
+          </g>
+        </svg>
+
+        <button id="btn-try-again" class="btn btn-orange">TRY AGAIN</button>
+      </div>
+    </section>
+
+    <!-- ===================== SLIDE 3: CHOOSE PENGUIN ===================== -->
+    <section id="slide-3" class="slide">
+      <div class="slide-content slide-center">
+        <h2 class="slide-subheading" id="heading-choose">Choose a penguin</h2>
+        <p class="slide-text">Each one has something special to say</p>
+
+        <div class="penguin-choices">
+          <!-- Penguin 1 with gift -->
+          <button id="btn-penguin-1" class="penguin-choice" aria-label="Choose penguin 1">
+            <svg class="penguin penguin-gift" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+              <!-- Body -->
+              <ellipse cx="100" cy="150" rx="62" ry="72" fill="#f5f0e6"/>
+              <ellipse cx="100" cy="140" rx="65" ry="78" fill="#b5a48c"/>
+              <ellipse cx="100" cy="155" rx="45" ry="55" fill="#f5f0e6"/>
+              <!-- Head -->
+              <ellipse cx="100" cy="78" rx="48" ry="44" fill="#b5a48c"/>
+              <ellipse cx="100" cy="86" rx="35" ry="28" fill="#f5f0e6"/>
+              <!-- Eyes -->
+              <circle cx="86" cy="80" r="4" fill="#4a4a4a"/>
+              <circle cx="85" cy="79" r="1.2" fill="#fff"/>
+              <circle cx="114" cy="80" r="4" fill="#4a4a4a"/>
+              <circle cx="113" cy="79" r="1.2" fill="#fff"/>
+              <!-- Beak -->
+              <path d="M 95 92 L 100 99 L 105 92 Z" fill="#f4a940"/>
+              <!-- Blush -->
+              <circle cx="76" cy="90" r="6" fill="#ffb5b5" opacity="0.5"/>
+              <circle cx="124" cy="90" r="6" fill="#ffb5b5" opacity="0.5"/>
+              <!-- Gift box -->
+              <rect x="68" y="155" width="64" height="45" rx="4" fill="#ffb6c1"/>
+              <rect x="68" y="155" width="64" height="8" rx="2" fill="#ff91a4"/>
+              <line x1="100" y1="155" x2="100" y2="200" stroke="#ff91a4" stroke-width="3"/>
+              <!-- Ribbon bow -->
+              <path d="M 92 155 Q 85 142, 100 148 Q 115 142, 108 155" fill="#ff91a4"/>
+              <!-- Left flipper holding gift -->
+              <path d="M 42 118 Q 28 140, 68 165" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+              <!-- Right flipper holding gift -->
+              <path d="M 158 118 Q 172 140, 132 165" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+              <!-- Feet -->
+              <ellipse cx="78" cy="230" rx="16" ry="6" fill="#f4a940" transform="rotate(-5 78 230)"/>
+              <ellipse cx="122" cy="230" rx="16" ry="6" fill="#f4a940" transform="rotate(5 122 230)"/>
+            </svg>
+          </button>
+
+          <!-- Penguin 2 with gift -->
+          <button id="btn-penguin-2" class="penguin-choice" aria-label="Choose penguin 2">
+            <svg class="penguin penguin-gift" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="100" cy="150" rx="62" ry="72" fill="#f5f0e6"/>
+              <ellipse cx="100" cy="140" rx="65" ry="78" fill="#b5a48c"/>
+              <ellipse cx="100" cy="155" rx="45" ry="55" fill="#f5f0e6"/>
+              <ellipse cx="100" cy="78" rx="48" ry="44" fill="#b5a48c"/>
+              <ellipse cx="100" cy="86" rx="35" ry="28" fill="#f5f0e6"/>
+              <circle cx="86" cy="80" r="4" fill="#4a4a4a"/>
+              <circle cx="85" cy="79" r="1.2" fill="#fff"/>
+              <circle cx="114" cy="80" r="4" fill="#4a4a4a"/>
+              <circle cx="113" cy="79" r="1.2" fill="#fff"/>
+              <path d="M 95 92 L 100 99 L 105 92 Z" fill="#f4a940"/>
+              <circle cx="76" cy="90" r="6" fill="#ffb5b5" opacity="0.5"/>
+              <circle cx="124" cy="90" r="6" fill="#ffb5b5" opacity="0.5"/>
+              <rect x="68" y="155" width="64" height="45" rx="4" fill="#ffb6c1"/>
+              <rect x="68" y="155" width="64" height="8" rx="2" fill="#ff91a4"/>
+              <line x1="100" y1="155" x2="100" y2="200" stroke="#ff91a4" stroke-width="3"/>
+              <path d="M 92 155 Q 85 142, 100 148 Q 115 142, 108 155" fill="#ff91a4"/>
+              <path d="M 42 118 Q 28 140, 68 165" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+              <path d="M 158 118 Q 172 140, 132 165" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+              <ellipse cx="78" cy="230" rx="16" ry="6" fill="#f4a940" transform="rotate(-5 78 230)"/>
+              <ellipse cx="122" cy="230" rx="16" ry="6" fill="#f4a940" transform="rotate(5 122 230)"/>
+            </svg>
+          </button>
+
+          <!-- Penguin 3 with gift -->
+          <button id="btn-penguin-3" class="penguin-choice" aria-label="Choose penguin 3">
+            <svg class="penguin penguin-gift" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="100" cy="150" rx="62" ry="72" fill="#f5f0e6"/>
+              <ellipse cx="100" cy="140" rx="65" ry="78" fill="#b5a48c"/>
+              <ellipse cx="100" cy="155" rx="45" ry="55" fill="#f5f0e6"/>
+              <ellipse cx="100" cy="78" rx="48" ry="44" fill="#b5a48c"/>
+              <ellipse cx="100" cy="86" rx="35" ry="28" fill="#f5f0e6"/>
+              <circle cx="86" cy="80" r="4" fill="#4a4a4a"/>
+              <circle cx="85" cy="79" r="1.2" fill="#fff"/>
+              <circle cx="114" cy="80" r="4" fill="#4a4a4a"/>
+              <circle cx="113" cy="79" r="1.2" fill="#fff"/>
+              <path d="M 95 92 L 100 99 L 105 92 Z" fill="#f4a940"/>
+              <circle cx="76" cy="90" r="6" fill="#ffb5b5" opacity="0.5"/>
+              <circle cx="124" cy="90" r="6" fill="#ffb5b5" opacity="0.5"/>
+              <rect x="68" y="155" width="64" height="45" rx="4" fill="#ffb6c1"/>
+              <rect x="68" y="155" width="64" height="8" rx="2" fill="#ff91a4"/>
+              <line x1="100" y1="155" x2="100" y2="200" stroke="#ff91a4" stroke-width="3"/>
+              <path d="M 92 155 Q 85 142, 100 148 Q 115 142, 108 155" fill="#ff91a4"/>
+              <path d="M 42 118 Q 28 140, 68 165" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+              <path d="M 158 118 Q 172 140, 132 165" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+              <ellipse cx="78" cy="230" rx="16" ry="6" fill="#f4a940" transform="rotate(-5 78 230)"/>
+              <ellipse cx="122" cy="230" rx="16" ry="6" fill="#f4a940" transform="rotate(5 122 230)"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SLIDE 4: HAPPY BIRTHDAY CELEBRATION ===================== -->
+    <section id="slide-4" class="slide">
+      <div class="slide-content celebration-scene">
+        <!-- Confetti container -->
+        <div id="confetti-container" aria-hidden="true"></div>
+
+        <!-- Floating decorations -->
+        <div class="deco deco-duck" aria-hidden="true">
+          <!-- Yellow duck -->
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="50" rx="28" ry="24" fill="#FFE066"/>
+            <circle cx="40" cy="30" r="18" fill="#FFE066"/>
+            <circle cx="34" cy="26" r="3" fill="#4a4a4a"/>
+            <circle cx="33.5" cy="25.5" r="1" fill="#fff"/>
+            <path d="M 42 32 L 52 30 L 42 35 Z" fill="#f4a940"/>
+            <circle cx="28" cy="30" r="4" fill="#ffb5b5" opacity="0.4"/>
+          </svg>
+        </div>
+
+        <div class="deco deco-gift1" aria-hidden="true">
+          <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="20" width="50" height="45" rx="4" fill="#ffb6c1"/>
+            <rect x="5" y="20" width="50" height="8" rx="2" fill="#ff91a4"/>
+            <line x1="30" y1="20" x2="30" y2="65" stroke="#ff91a4" stroke-width="3"/>
+            <path d="M 22 20 Q 15 8, 30 14 Q 45 8, 38 20" fill="#ff91a4"/>
+          </svg>
+        </div>
+
+        <div class="deco deco-gift2" aria-hidden="true">
+          <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="20" width="50" height="45" rx="4" fill="#b8e6b8"/>
+            <rect x="5" y="20" width="50" height="8" rx="2" fill="#8ed08e"/>
+            <line x1="30" y1="20" x2="30" y2="65" stroke="#8ed08e" stroke-width="3"/>
+            <path d="M 22 20 Q 15 8, 30 14 Q 45 8, 38 20" fill="#8ed08e"/>
+          </svg>
+        </div>
+
+        <div class="deco deco-gift3" aria-hidden="true">
+          <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="20" width="50" height="45" rx="4" fill="#c8b8e8"/>
+            <rect x="5" y="20" width="50" height="8" rx="2" fill="#a894d4"/>
+            <line x1="30" y1="20" x2="30" y2="65" stroke="#a894d4" stroke-width="3"/>
+            <path d="M 22 20 Q 15 8, 30 14 Q 45 8, 38 20" fill="#a894d4"/>
+          </svg>
+        </div>
+
+        <!-- Stars -->
+        <span class="deco deco-star star1" aria-hidden="true">⭐</span>
+        <span class="deco deco-star star2" aria-hidden="true">🌟</span>
+        <span class="deco deco-star star3" aria-hidden="true">✨</span>
+        <span class="deco deco-star star4" aria-hidden="true">⭐</span>
+        <span class="deco deco-star star5" aria-hidden="true">✨</span>
+
+        <!-- Streamers -->
+        <span class="deco deco-streamer s1" aria-hidden="true">🎉</span>
+        <span class="deco deco-streamer s2" aria-hidden="true">🎊</span>
+
+        <!-- HAPPY BIRTHDAY Title -->
+        <h1 class="birthday-title" id="heading-birthday">HAPPY BIRTHDAY</h1>
+
+        <!-- Party penguin with cake -->
+        <div class="party-penguin-wrapper">
+          <svg class="penguin penguin-party" viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" aria-label="Party penguin with cake">
+            <!-- Party hat -->
+            <polygon points="120,8 95,65 145,65" fill="#ff91a4"/>
+            <polygon points="120,8 105,38 135,38" fill="#ffcdd2" opacity="0.6"/>
+            <circle cx="120" cy="8" r="6" fill="#FFE066"/>
+            <line x1="100" y1="52" x2="140" y2="52" stroke="#FFE066" stroke-width="2"/>
+
+            <!-- Body -->
+            <ellipse cx="120" cy="165" rx="68" ry="80" fill="#b5a48c"/>
+            <ellipse cx="120" cy="175" rx="50" ry="60" fill="#f5f0e6"/>
+            <!-- Head -->
+            <ellipse cx="120" cy="95" rx="52" ry="48" fill="#b5a48c"/>
+            <ellipse cx="120" cy="103" rx="38" ry="32" fill="#f5f0e6"/>
+            <!-- Eyes -->
+            <circle cx="106" cy="97" r="5" fill="#4a4a4a"/>
+            <circle cx="105" cy="96" r="1.5" fill="#fff"/>
+            <circle cx="134" cy="97" r="5" fill="#4a4a4a"/>
+            <circle cx="133" cy="96" r="1.5" fill="#fff"/>
+            <!-- Happy mouth -->
+            <path d="M 112 112 Q 120 120, 128 112" stroke="#4a4a4a" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- Beak -->
+            <path d="M 115 105 L 120 113 L 125 105 Z" fill="#f4a940"/>
+            <!-- Blush -->
+            <circle cx="94" cy="107" r="7" fill="#ffb5b5" opacity="0.5"/>
+            <circle cx="146" cy="107" r="7" fill="#ffb5b5" opacity="0.5"/>
+            <!-- Bow tie -->
+            <path d="M 110 135 L 120 140 L 130 135 L 120 145 Z" fill="#ff6b6b"/>
+            <circle cx="120" cy="140" r="3" fill="#ff4444"/>
+
+            <!-- Left flipper holding cake -->
+            <path d="M 55 140 Q 35 160, 60 185" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+            <!-- Right flipper -->
+            <path d="M 185 140 Q 205 160, 180 185" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+
+            <!-- Cake -->
+            <g transform="translate(152, 148)">
+              <rect x="0" y="18" width="45" height="28" rx="4" fill="#ffcdd2"/>
+              <rect x="-3" y="12" width="51" height="10" rx="3" fill="#f8bbd0"/>
+              <!-- Frosting drips -->
+              <circle cx="8" cy="22" r="4" fill="#f8bbd0"/>
+              <circle cx="22" cy="24" r="5" fill="#f8bbd0"/>
+              <circle cx="37" cy="22" r="4" fill="#f8bbd0"/>
+              <!-- Candle -->
+              <rect x="19" y="-2" width="6" height="16" rx="2" fill="#90CAF9"/>
+              <line x1="22" y1="-2" x2="22" y2="14" stroke="#fff" stroke-width="1" opacity="0.4"/>
+              <!-- Flame -->
+              <ellipse cx="22" cy="-8" rx="4" ry="7" fill="#FFE066" class="candle-flame"/>
+              <ellipse cx="22" cy="-7" rx="2" ry="4" fill="#FF9800"/>
+            </g>
+
+            <!-- Feet -->
+            <ellipse cx="95" cy="244" rx="18" ry="7" fill="#f4a940" transform="rotate(-8 95 244)"/>
+            <ellipse cx="145" cy="244" rx="18" ry="7" fill="#f4a940" transform="rotate(8 145 244)"/>
+          </svg>
+
+          <p class="make-wish">MAKE A WISH ✨</p>
+        </div>
+
+        <!-- Click me button -->
+        <button id="btn-click-me" class="btn btn-heart" aria-label="Click to see birthday message">
+          <span>CLICK ME</span>
+          <span class="heart-icon">💝</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===================== SLIDE 5: BIRTHDAY MESSAGE ===================== -->
+    <section id="slide-5" class="slide">
+      <div class="slide-content message-scene">
+        <!-- Decorative stickers -->
+        <div class="sticker sticker-bunny" aria-hidden="true">
+          <svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bunny body -->
+            <ellipse cx="40" cy="65" rx="25" ry="28" fill="#f5f0e6"/>
+            <!-- Bunny head -->
+            <circle cx="40" cy="42" r="20" fill="#f5f0e6"/>
+            <!-- Ears -->
+            <ellipse cx="30" cy="15" rx="8" ry="20" fill="#f5f0e6"/>
+            <ellipse cx="30" cy="15" rx="4" ry="14" fill="#ffcdd2"/>
+            <ellipse cx="50" cy="15" rx="8" ry="20" fill="#f5f0e6"/>
+            <ellipse cx="50" cy="15" rx="4" ry="14" fill="#ffcdd2"/>
+            <!-- Eyes -->
+            <circle cx="33" cy="40" r="3" fill="#4a4a4a"/>
+            <circle cx="32.5" cy="39.5" r="1" fill="#fff"/>
+            <circle cx="47" cy="40" r="3" fill="#4a4a4a"/>
+            <circle cx="46.5" cy="39.5" r="1" fill="#fff"/>
+            <!-- Nose -->
+            <ellipse cx="40" cy="46" rx="3" ry="2" fill="#ffb5b5"/>
+            <!-- Mouth -->
+            <path d="M 37 49 Q 40 53, 43 49" stroke="#ccc" stroke-width="1" fill="none"/>
+            <!-- Blush -->
+            <circle cx="28" cy="46" r="5" fill="#ffb5b5" opacity="0.3"/>
+            <circle cx="52" cy="46" r="5" fill="#ffb5b5" opacity="0.3"/>
+          </svg>
+        </div>
+
+        <div class="sticker sticker-cherries" aria-hidden="true">🍒</div>
+        <div class="sticker sticker-heart1" aria-hidden="true">🩷</div>
+        <div class="sticker sticker-heart2" aria-hidden="true">💕</div>
+        <div class="sticker sticker-sparkle" aria-hidden="true">✨</div>
+
+        <div class="sticker sticker-duck2" aria-hidden="true">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="30" cy="38" rx="20" ry="18" fill="#FFE066"/>
+            <circle cx="30" cy="22" r="14" fill="#FFE066"/>
+            <circle cx="25" cy="19" r="2.5" fill="#4a4a4a"/>
+            <circle cx="24.5" cy="18.5" r="0.8" fill="#fff"/>
+            <path d="M 32 24 L 40 22 L 32 27 Z" fill="#f4a940"/>
+            <circle cx="20" cy="24" r="3.5" fill="#ffb5b5" opacity="0.4"/>
+          </svg>
+        </div>
+
+        <!-- Main message card -->
+        <div class="message-card">
+          <h1 class="message-title">✨ HAPPY BIRTHDAY ✨</h1>
+
+          <div class="message-layout">
+            <!-- Heart photo frame -->
+            <div class="heart-photo-container">
+              <div class="heart-photo">
+                <!-- The Heart Photo -->
+                <img src="photos/WhatsApp%20Image%202026-10-06%20at%202.44.04%20AM.jpeg" alt="My love" class="heart-photo-img" />
+              </div>
+              <p class="photo-label">Cutie 💗</p>
+            </div>
+
+            <!-- Birthday message -->
+            <div class="message-text-wrapper">
+              <div class="message-text">
+                <p>Happiiieeeessstttttt birthday to my favorite person in the whole wide world</p>
+                <p>Happiiieeeessstttttt birthday to my baby</p>
+                <p>Happiiieeeessstttttt birthday to someone i could never live without</p>
+                <p>It's my man's birthday today, I'm so so so happy</p>
+                <p>This year i wish that you become even happier than last year, and you get everything that you ever asked for...(ik you will say that you have me 🤭🤭, but no)</p>
+                <p>I'm so happy and lucky that i get to celebrate a birthday of someone so amazing that he never gets out of my head</p>
+                <p>Someone who is charming, handsome and has a great personality in his own way</p>
+                <p>Someone who becomes popular even though he doesn't want to 🙄🙄😂😂</p>
+                <p class="love-line">I love you so so so much my baby 🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷</p>
+                <p>I wish you a very very happy birthday and I wish this year brings you happiness, courage and peace (I can't guarantee about the last one though 😁😁😁)</p>
+                <p class="love-line final-love">Baby I love you so so so much 💖</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigate back to penguins -->
+          <button id="btn-back-to-penguins-from-msg" class="btn btn-pastel" aria-label="Go back to penguins">
+            <span class="arrow">←</span>
+            <span>Back to Penguins 🐧</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SLIDE 6: PHOTO GALLERY ===================== -->
+    <section id="slide-6" class="slide">
+      <div class="slide-content gallery-scene">
+        <h1 class="gallery-title">Our Memories Together 💕</h1>
+        <p class="gallery-subtitle">Every moment with you is special</p>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!--
+            HOW TO ADD PHOTOS:
+            1. Place your photo files in the photos/ folder
+            2. Add items below following this pattern:
+
+            <div class="gallery-item">
+              <img src="photos/your-photo-name.jpg" alt="Description" loading="lazy" />
+              <div class="gallery-caption">Your caption here</div>
+            </div>
+          -->
+
+          <!-- Placeholder items - replace with your photos -->
+          <div class="gallery-item placeholder-item">
+            <div class="gallery-placeholder">
+              <span>📸</span>
+              <small>Photo 1</small>
+            </div>
+          </div>
+          <div class="gallery-item placeholder-item">
+            <div class="gallery-placeholder">
+              <span>📷</span>
+              <small>Photo 2</small>
+            </div>
+          </div>
+          <div class="gallery-item placeholder-item">
+            <div class="gallery-placeholder">
+              <span>🖼️</span>
+              <small>Photo 3</small>
+            </div>
+          </div>
+          <div class="gallery-item placeholder-item">
+            <div class="gallery-placeholder">
+              <span>📸</span>
+              <small>Photo 4</small>
+            </div>
+          </div>
+          <div class="gallery-item placeholder-item">
+            <div class="gallery-placeholder">
+              <span>📷</span>
+              <small>Photo 5</small>
+            </div>
+          </div>
+          <div class="gallery-item placeholder-item">
+            <div class="gallery-placeholder">
+              <span>🖼️</span>
+              <small>Photo 6</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back button -->
+        <button id="btn-back-to-penguins-from-gallery" class="btn btn-pastel" aria-label="Go back to penguins">
+          <span class="arrow">←</span>
+          <span>Back to Penguins 🐧</span>
+        </button>
+      </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" role="dialog" aria-label="Photo viewer" hidden>
+        <button id="lightbox-close" class="lightbox-close" aria-label="Close photo viewer">&times;</button>
+        <button id="lightbox-prev" class="lightbox-nav lightbox-prev-btn" aria-label="Previous photo">&#8249;</button>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Gallery photo" />
+        <button id="lightbox-next" class="lightbox-nav lightbox-next-btn" aria-label="Next photo">&#8250;</button>
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+    </section>
+
+    <!-- ===================== SLIDE 7: VOICE NOTE ===================== -->
+    <section id="slide-7" class="slide">
+      <div class="slide-content voice-note-scene">
+        <!-- Floating music notes -->
+        <div class="floating-notes" aria-hidden="true">
+          <span class="music-note n1">🎵</span>
+          <span class="music-note n2">🎶</span>
+          <span class="music-note n3">🎵</span>
+          <span class="music-note n4">🎶</span>
+        </div>
+
+        <h1 class="voice-title">A Special Message 🎙️</h1>
+        <p class="voice-subtitle">Listen with your heart</p>
+
+        <!-- Penguin with headphones -->
+        <svg class="penguin penguin-music" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" aria-label="Penguin listening to music">
+          <!-- Headphones back band -->
+          <path d="M 50 110 Q 100 20, 150 110" fill="none" stroke="#ffb6c1" stroke-width="12" stroke-linecap="round"/>
+          
+          <!-- Body -->
+          <ellipse cx="100" cy="145" rx="68" ry="78" fill="#b5a48c"/>
+          <ellipse cx="100" cy="155" rx="48" ry="58" fill="#f5f0e6"/>
+          <!-- Head -->
+          <ellipse cx="100" cy="82" rx="52" ry="48" fill="#b5a48c"/>
+          <ellipse cx="100" cy="90" rx="38" ry="32" fill="#f5f0e6"/>
+          <!-- Eyes - happy closed -->
+          <path d="M 80 84 Q 85 76, 90 84" stroke="#4a4a4a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M 110 84 Q 115 76, 120 84" stroke="#4a4a4a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Beak -->
+          <path d="M 95 94 L 100 102 L 105 94 Z" fill="#f4a940"/>
+          <!-- Blush -->
+          <circle cx="74" cy="94" r="7" fill="#ffb5b5" opacity="0.5"/>
+          <circle cx="126" cy="94" r="7" fill="#ffb5b5" opacity="0.5"/>
+          
+          <!-- Headphone ear cups -->
+          <rect x="40" y="70" width="20" height="40" rx="10" fill="#ff91a4"/>
+          <rect x="140" y="70" width="20" height="40" rx="10" fill="#ff91a4"/>
+          
+          <!-- Flippers resting -->
+          <path d="M 35 130 Q 55 165, 85 155" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+          <path d="M 165 130 Q 145 165, 115 155" fill="#a89878" stroke="#9a8a6a" stroke-width="1.5"/>
+          <!-- Feet -->
+          <ellipse cx="75" cy="222" rx="18" ry="7" fill="#f4a940" transform="rotate(-8 75 222)"/>
+          <ellipse cx="125" cy="222" rx="18" ry="7" fill="#f4a940" transform="rotate(8 125 222)"/>
+        </svg>
+
+        <!-- Audio Player Container -->
+        <div class="audio-player-container">
+          <!-- 
+            HOW TO ADD VOICE NOTE:
+            1. Place your audio file in the project folder (e.g., 'voice-note.mp3')
+            2. Update the 'src' attribute below to point to your file
+          -->
+          <audio id="voice-note" controls class="custom-audio">
+            <source src="WhatsApp%20Audio%202026-10-06%20at%205.32.47%20PM.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <!-- Back button -->
+        <button id="btn-back-to-penguins-from-voice" class="btn btn-pastel" aria-label="Go back to penguins">
+          <span class="arrow">←</span>
+          <span>Back to Penguins 🐧</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===================== SLIDE 8: FINAL MESSAGE ===================== -->
+    <section id="slide-8" class="slide">
+      <!-- Confetti container for final slide -->
+      <div id="confetti-final" class="confetti-container" aria-hidden="true"></div>
+      
+      <div class="slide-content final-scene">
+        <h1 class="huge-message" contenteditable="true">
+          Happiiieeeessstttttt birthday to my favorite person in the whole wide world<br><br>
+          Happiiieeeessstttttt birthday to my baby<br><br>
+          Happiiieeeessstttttt birthday to someone i could never live without<br><br>
+          It's my man's birthday today, I'm so so so happy<br><br>
+          This year i wish that you become even happier than last year, and you get everything that you ever asked for...(ik you will say that you have me 🤭🤭, but no)<br><br>
+          I'm so happy and lucky that i get to celebrate a birthday of someone so amazing that he never gets out of my head<br><br>
+          Someone who is just the best<br><br>
+          Baby I love you so so so much
+        </h1>
+        
+        <p class="edit-hint">(Click the text above to edit it if you need to!)</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
